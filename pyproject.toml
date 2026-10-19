@@ -24,6 +24,10 @@ dependencies = [
     "websockets>=12",
 ]
 
+[project.urls]
+Homepage = "https://github.com/maurus1988kk/ReverseVoice"
+Issues = "https://github.com/maurus1988kk/ReverseVoice/issues"
+
 [project.optional-dependencies]
 dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.5"]
 
