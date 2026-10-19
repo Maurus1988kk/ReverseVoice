@@ -18,8 +18,8 @@ Trascrive file audio/video in Markdown, **interamente in locale** (nessun dato l
 > Non hai Python o non sei pratico di terminale? Segui la [guida passo-passo](README_INSTALLAZIONE.md).
 
 ```bash
-git clone https://github.com/Maurus1988kk/AudioToTranscript.git
-cd AudioToTranscript
+git clone https://github.com/maurus1988kk/ReverseVoice.git
+cd ReverseVoice
 ```
 
 **Metodo rapido** — i launcher creano l'ambiente virtuale e installano tutto al primo avvio:

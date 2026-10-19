@@ -53,8 +53,8 @@ Il primo avvio scarica le librerie e richiede qualche minuto.
 ```bash
 sudo apt update
 sudo apt install python3 python3-venv python3-tk git
-git clone https://github.com/Maurus1988kk/AudioToTranscript.git
-cd AudioToTranscript
+git clone https://github.com/maurus1988kk/ReverseVoice.git
+cd ReverseVoice
 ./avvia.sh          # interfaccia grafica
 ./avvia.sh live     # trascrizione live nel browser
 ```
