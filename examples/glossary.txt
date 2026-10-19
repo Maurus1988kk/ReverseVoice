@@ -1,0 +1,1 @@
+Kubernetes, microservizi, API REST, CI/CD, throughput, latenza, refactoring, endpoint

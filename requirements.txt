@@ -1,0 +1,6 @@
+# Equivalente di `pip install .` (le dipendenze sono definite in pyproject.toml)
+faster-whisper>=1.0,<2
+numpy>=1.24
+fastapi>=0.110
+uvicorn>=0.27
+websockets>=12

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audiototranscript"
+version = "1.0.0"
+description = "Trascrizione locale (CPU) di audio/video in Markdown, anche dal vivo nel browser, con faster-whisper"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["whisper", "faster-whisper", "transcription", "speech-to-text", "italian"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "faster-whisper>=1.0,<2",
+    "numpy>=1.24",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "websockets>=12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.5"]
+
+[project.scripts]
+audiototranscript = "audiototranscript.cli:main"
+audiototranscript-gui = "audiototranscript.gui:main"
+audiototranscript-live = "audiototranscript.live_server:main"
+
+[tool.setuptools]
+packages = ["audiototranscript"]
+
+[tool.setuptools.package-data]
+audiototranscript = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
